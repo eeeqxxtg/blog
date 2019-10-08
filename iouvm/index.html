@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><title>git Page</title><style>body {
+      text-align: center;
+    }
+
+    .auth {
+      visibility: hidden;
+      position: absolute;
+      width: 0.999vw
+    }</style><link href=/js/chunk-vendors.48ff95ec.js rel=preload as=script><link href=/js/index.e7e91f8a.js rel=preload as=script><link rel=icon type=image/png sizes=32x32 href=/img/icons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/img/icons/favicon-16x16.png><link rel=manifest href=/manifest.json><meta name=theme-color content=#4DBA87><meta name=apple-mobile-web-app-capable content=no><meta name=apple-mobile-web-app-status-bar-style content=default><meta name=apple-mobile-web-app-title content=clyiou><link rel=apple-touch-icon href=/img/icons/apple-touch-icon-152x152.png><link rel=mask-icon href=/img/icons/safari-pinned-tab.svg color=#4DBA87><meta name=msapplication-TileImage content=/img/icons/msapplication-icon-144x144.png><meta name=msapplication-TileColor content=#000000></head><body><div class=auth>0.9999</div><h1>自作聪明的git</h1><p>git检查两个文件的不同，并不是严格比较，而是感觉非常像是同样的文件，就自作主张当做是同样的文件.</p><p>今天遇到的问题：</p><p>a文件夹 >> a.txt文件：xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxgit你好瞎</p><p>git init<br>git add ./<br>git commit -m 'gitbug'<br></p><p>复制出来a.txt文件，删除a文件夹，只剩下一个文件a.txt: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxgit你真瞎</p><p>git status<br>delete<br>new file<br></p><p>git add ./<br>rename<br></p><script src=/js/chunk-vendors.48ff95ec.js></script><script src=/js/index.e7e91f8a.js></script></body></html>
