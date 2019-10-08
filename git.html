@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自作聪明的git</title>
+	<style>
+		body{
+			text-align:center;
+		}
+		.auth{
+		   visibility: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div class="auth">0.9999</div>
+	<h1>自作聪明的git</h1>
+	<p>
+		git检查两个文件的不同，并不是严格比较，而是感觉非常像是同样的文件，就自作主张当做是同样的文件.
+	</p>
+	<p>
+		今天遇到的问题：
+	</p>
+	<p>
+		a文件夹 >> a.txt文件：xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxgit你好瞎
+
+	</p>
+	<p>
+		git init <br>
+		git add ./ <br>
+		git commit -m 'gitbug' <br>
+	</p>
+	<p>
+		复制出来a.txt文件，删除a文件夹，只剩下一个文件a.txt: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxgit你真瞎
+	</p>
+
+	<p>
+		git status <br>
+		delete <br>
+		new file <br>
+	</p>
+
+	<p>
+		git add ./ <br>
+		rename <br>
+	</p>
+
+	
+</body>
+</html>
+
+
