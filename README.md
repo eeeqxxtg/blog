@@ -1,3 +1,3 @@
 # blog
 ## page
-### https://eeeqxxtg.github.io/blog/
+### https://eeeqxxtg.github.io/clyiou/
