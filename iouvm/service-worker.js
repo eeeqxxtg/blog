@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.6d4c78f1e4bc4da07fbc4a7b63f00d4b.js"
+  "precache-manifest.148290ee5fad98c035a0a7894bff082c.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "clyiou"});

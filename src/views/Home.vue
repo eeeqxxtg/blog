@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome"/>
+    <HelloWorld msg="CLY IOU VM"/>
   </div>
 </template>
 
