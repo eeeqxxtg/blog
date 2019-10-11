@@ -1,16 +1,17 @@
 <template>
   <div class="home">
-    <HelloWorld msg="CLY IOU VM"/>
+    <HelloHeart msg="CLY IOU VM"/>
+    <!-- <HelloHeart msg="Welcome"/> -->
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import HelloHeart from '@/components/HelloHeart.vue'; // @ is an alias to /src
 
 @Component({
   components: {
-    HelloWorld,
+    HelloHeart,
   },
 })
 export default class Home extends Vue {}

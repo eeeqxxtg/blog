@@ -30,13 +30,17 @@ const heartSin = (i: number = 10) => (x: number) => {
 };
 
 @Component
-export default class HelloWorld extends Vue {
+export default class HelloHeart extends Vue {
   @Prop() private msg!: string;
 
   private svgWidth: number = 1024;
   private svgHeight: number = 1024;
 
   private qLineWidth: number = 2;
+
+  private param: number = 0;
+
+  private timer: any = null;
 
   get qPath() {
     const R = 0;
@@ -63,7 +67,7 @@ export default class HelloWorld extends Vue {
 
     const totalWidth = this.svgWidth;
     const totalHeight = this.svgHeight;
-    const sin = (x: number) => (1 - heartSin()(x)) * totalHeight;
+    const sin = (x: number) => (1 - heartSin(this.param)(x)) * totalHeight;
 
     for (let i = 0; i < totalWidth; i++) {
       const x = i / totalWidth;
@@ -76,6 +80,24 @@ export default class HelloWorld extends Vue {
 
     return points.join(' ');
   }
+
+  private play() {
+    this.param += 0.1;
+    if (this.param > 20) {
+      this.param = 0;
+    }
+    this.timer = requestAnimationFrame(this.play);
+  }
+
+  private mounted() {
+    this.timer = requestAnimationFrame(this.play);
+  }
+
+  private beforeDestroy() {
+    cancelAnimationFrame(this.timer);
+    this.timer = null;
+  }
+
 }
 </script>
 
